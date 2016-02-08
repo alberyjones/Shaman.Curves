@@ -1,0 +1,38 @@
+{
+  "version": "1.0.0-beta-3450",
+  "tags": [
+    "curves",
+    "decisions",
+    "choice",
+    "algorithm"
+  ],
+  "authors": [
+    "Andrea Martinelli"
+  ],
+  "description": "Provides a way of interpolating a series of points in a monotonic and smoothed way.",
+  "iconUrl": "http://shaman.io/images/shaman-nuget-icon.png",
+  "projectUrl": "http://shaman.io/",
+  "compilationOptions": {
+    "keyFile": "ShamanOpenSourceKey.snk"
+  },
+  "compile": [],
+  "dependencies": {
+    "Shaman.ValueString": "1.0.2.9"
+  },
+  "frameworks": {
+    "dotnet": {
+      "dependencies": {
+        "System.Runtime": "4.0.21-beta-23217",
+        "System.Runtime.Extensions": "4.0.11-beta-23217",
+        "System.Collections": "4.0.11-beta-23217",
+        "System.Globalization": "4.0.11-beta-23217",
+        "System.Linq": "4.0.1-beta-23217"
+      }
+    },
+    "net45": {
+      "frameworkAssemblies": {
+        "System.Runtime": "4.0.0.0"
+      }
+    }
+  }
+}
