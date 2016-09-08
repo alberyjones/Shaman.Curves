@@ -8,8 +8,14 @@ using System.Globalization;
 
 namespace Shaman.Curves
 {
+#if !CORECLR
+    [Serializable]
+#endif
     public class Curve
     {
+#if !CORECLR
+        [Serializable]
+#endif
         private class ConstantInterpolator : Interpolator
         {
             public override double Interpolate(double x)

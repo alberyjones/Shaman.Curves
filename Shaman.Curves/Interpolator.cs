@@ -4,6 +4,9 @@ using System.Linq;
 
 namespace Shaman.Curves
 {
+#if !CORECLR
+    [Serializable]
+#endif
     public abstract class Interpolator
     {
         internal SortedList<double, double> points = new SortedList<double, double>();

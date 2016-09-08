@@ -6,8 +6,14 @@ using System.Threading.Tasks;
 
 namespace Shaman.Curves
 {
+#if !CORECLR
+    [Serializable]
+#endif
     public class MonotoneCubicInterpolator : Interpolator
     {
+#if !CORECLR
+        [NonSerializedAttribute]
+#endif
         private Func<double, double> func;
 
         public override double Interpolate(double x)

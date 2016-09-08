@@ -1,5 +1,5 @@
 {
-  "version": "1.0.0-beta-3450",
+  "version": "1.0.1.1",
   "tags": [
     "curves",
     "decisions",
@@ -17,22 +17,23 @@
   },
   "compile": [],
   "dependencies": {
-    "Shaman.ValueString": "1.0.2.9"
+    "Shaman.ValueString": "1.0.2.18"
   },
   "frameworks": {
-    "dotnet": {
+    "netstandard1.3": {
+      "compilationOptions": {
+        "define": [
+          "CORECLR"
+        ]
+      },
       "dependencies": {
-        "System.Runtime": "4.0.21-beta-23217",
-        "System.Runtime.Extensions": "4.0.11-beta-23217",
-        "System.Collections": "4.0.11-beta-23217",
-        "System.Globalization": "4.0.11-beta-23217",
-        "System.Linq": "4.0.1-beta-23217"
+        "System.Runtime": "4.1",
+        "System.Runtime.Extensions": "4.1",
+        "System.Collections": "4.0.11",
+        "System.Globalization": "4.0.11",
+        "System.Linq": "4.1.0"
       }
     },
-    "net45": {
-      "frameworkAssemblies": {
-        "System.Runtime": "4.0.0.0"
-      }
-    }
+    "net45": {}
   }
 }
